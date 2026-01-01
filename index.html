@@ -4,12 +4,129 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mr Steven Prime Realty | Luxury Real Estate in Lagos</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: #222;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: url("images/luxury-mansion.jpg") center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background: #fff;
+  color: #111;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/* ===== ABOUT LUXURY ===== */
+.about-section {
+  position: relative;
+  background: url("images/luxury-interior.jpg") center/cover no-repeat;
+  color: #fff;
+  padding: 90px 20px;
+}
+
+.about-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.about-section .content {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+/* ===== LICENSE ===== */
+.license-section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+.license-section ul {
+  padding-left: 20px;
+}
+
+.license-section li {
+  margin-bottom: 10px;
+}
+
+.note {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* ===== TRUST ===== */
+.trust-section {
+  background: url("images/luxury-interior.jpg") center/cover no-repeat;
+  position: relative;
+  padding: 90px 20px;
+  color: #fff;
+}
+
+.trust-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.trust-section h2,
+.trust-grid {
+  position: relative;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 /* ===== PROPERTY GRID ===== */
@@ -19,11 +136,9 @@ body {
   gap: 25px;
 }
 
-/* ===== PROPERTY CARD ===== */
 .card {
   background: #fff;
   border-radius: 10px;
-  overflow: hidden;
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
@@ -31,41 +146,8 @@ body {
   padding: 18px;
 }
 
-.card h3 {
-  margin: 0 0 8px;
-}
-
 .price {
   font-weight: 700;
-  font-size: 18px;
-}
-
-/* ===== SOLD BADGE ===== */
-.badge {
-  background: #111;
-  color: #fff;
-  padding: 5px 12px;
-  font-size: 12px;
-  border-radius: 4px;
-  display: inline-block;
-}
-
-/* ===== HEADER ===== */
-header {
-  background: linear-gradient(to right, #111, #333);
-  color: #fff;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 18px;
-  opacity: 0.9;
 }
 
 /* ===== SECTIONS ===== */
@@ -73,16 +155,6 @@ header p {
   padding: 60px 20px;
   max-width: 1100px;
   margin: auto;
-}
-
-.section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #111;
-}
-
-.about, .services, .stats, .contact {
-  margin-bottom: 40px;
 }
 
 /* ===== SERVICES ===== */
@@ -108,11 +180,6 @@ header p {
   padding: 50px 20px;
 }
 
-.stats h3 {
-  font-size: 40px;
-  margin: 0;
-}
-
 /* ===== CONTACT ===== */
 .contact {
   background: #f9f9f9;
@@ -120,175 +187,85 @@ header p {
   text-align: center;
 }
 
-.contact a {
-  color: #111;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-/* ===== FOOTER ===== */
 footer {
   background: #111;
   color: #aaa;
   text-align: center;
   padding: 15px;
-  font-size: 14px;
-}
-
-header {
-  background: linear-gradient(to right, #111, #333);
-  color: #fff;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 18px;
-  opacity: 0.9;
-}
-
-.section {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #111;
-}
-
-.about, .services, .stats, .contact {
-  margin-bottom: 40px;
-}
-
-.services ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  list-style: none;
-  padding: 0;
-}
-
-.services li {
-  background: #f5f5f5;
-  padding: 18px;
-  border-left: 4px solid #111;
-}
-
-.stats {
-  background: #111;
-  color: #fff;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.stats h3 {
-  font-size: 40px;
-  margin: 0;
-}
-
-.contact {
-  background: #f9f9f9;
-  padding: 40px;
-  text-align: center;
-}
-
-.contact a {
-  color: #111;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-footer {
-  background: #111;
-  color: #aaa;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Mr Steven Prime Realty</h1>
-  <p>Luxury Real Estate Solutions in Lagos, Nigeria</p>
-</header>
-
-<section class="section about">
-  <h2>About Us</h2>
-  <p>
-    Mr Steven Prime Realty is a trusted real estate company based in Lagos,
-    delivering premium property solutions with professionalism, integrity,
-    and deep market knowledge. We specialize in connecting clients with
-    profitable investments, quality homes, and secure real estate opportunities.
-  </p>
-</section>
-
-<section class="stats">
-  <h3>42+</h3>
-  <p>Properties Successfully Sold</p>
-</section>
-<section class="section">
-  <h2>Shortlet Apartments</h2>
-
-  <div class="grid">
-    <div class="card">
-      <div class="card-content">
-        <h3>1 Bedroom Apartment</h3>
-        <p class="price">₦140,000</p>
-        <p>₦50,000 Caution Fee</p>
-        <a href="mailto:stevensprimerealty@gmail.com">Book Now</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-content">
-        <h3>2 Bedroom Apartment</h3>
-        <p class="price">₦240,000</p>
-        <p>₦50,000 Caution Fee</p>
-        <a href="mailto:stevensprimerealty@gmail.com">Book Now</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-content">
-        <h3>3 Bedroom Apartment</h3>
-        <p class="price">₦350,000</p>
-        <p>₦50,000 Caution Fee</p>
-        <a href="mailto:stevensprimerealty@gmail.com">Book Now</a>
-      </div>
-    </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Luxury Real Estate & Property Investment Solutions in Lagos</h1>
+    <p>Helping individuals and investors acquire premium properties with transparency and value.</p>
+    <a href="mailto:stevensprimerealty@gmail.com" class="btn-primary">Speak With Us</a>
   </div>
 </section>
+
+<!-- ABOUT -->
+<section class="about-section">
+  <div class="overlay"></div>
+  <div class="content">
+    <h2>About Steven Prime Realty</h2>
+    <p>Steven Prime Realty is a property advisory brand focused on quality real estate solutions across Lagos.</p>
+    <p class="highlight">Trust • Transparency • Professionalism • Value</p>
+  </div>
+</section>
+
+<!-- LICENSE -->
+<section class="license-section">
+  <h2>Legal Compliance & Business Assurance</h2>
+  <ul>
+    <li><strong>Status:</strong> Registered business entity in Nigeria</li>
+    <li><strong>Location:</strong> Lagos State</li>
+    <li><strong>Process:</strong> Title verification & legal documentation</li>
+  </ul>
+  <p class="note">We act as facilitators and advisors only.</p>
+</section>
+
+<!-- TRUST -->
+<section class="trust-section">
+  <h2>Why Choose Steven Prime Realty</h2>
+  <div class="trust-grid">
+    <div><h4>Verified Opportunities</h4><p>Clear documentation.</p></div>
+    <div><h4>Transparent Guidance</h4><p>No hidden costs.</p></div>
+    <div><h4>Professional Network</h4><p>Lawyers & surveyors.</p></div>
+    <div><h4>Client First</h4><p>Your peace of mind.</p></div>
+  </div>
+</section>
+
+<!-- SHORTLETS -->
+<section class="section">
+  <h2>Shortlet Apartments</h2>
+  <div class="grid">
+    <div class="card"><div class="card-content"><h3>1 Bedroom</h3><p class="price">₦140,000</p></div></div>
+    <div class="card"><div class="card-content"><h3>2 Bedroom</h3><p class="price">₦240,000</p></div></div>
+    <div class="card"><div class="card-content"><h3>3 Bedroom</h3><p class="price">₦350,000</p></div></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
 <section class="section services">
   <h2>Our Services</h2>
   <ul>
-    <li>Buying & Selling of Properties</li>
-    <li>Rentals & Leasing</li>
-    <li>Shortlet Reservations & Bookings</li>
+    <li>Buying & Selling</li>
+    <li>Rentals</li>
+    <li>Shortlets</li>
     <li>Land Sales</li>
-    <li>Property Management</li>
-    <li>Real Estate Consulting</li>
+    <li>Consulting</li>
   </ul>
 </section>
 
+<!-- CONTACT -->
 <section class="section contact">
   <h2>Contact Us</h2>
-  <p>Email us today to start your real estate journey</p>
-  <p>
-    📧 <a href="mailto:stevensprimerealty@gmail.com">
-    stevensprimerealty@gmail.com
-    </a>
-  </p>
+  <p>📧 stevensprimerealty@gmail.com</p>
 </section>
 
 <footer>
