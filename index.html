@@ -21,13 +21,11 @@ body {
   position: relative;
   color: #fff;
 }
-
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.65);
 }
-
 .hero-content {
   position: relative;
   z-index: 2;
@@ -37,17 +35,14 @@ body {
   transform: translateY(-50%);
   text-align: center;
 }
-
 .hero-content h1 {
   font-size: 40px;
   margin-bottom: 15px;
 }
-
 .hero-content p {
   font-size: 18px;
   margin-bottom: 25px;
 }
-
 .btn-primary {
   background: #fff;
   color: #111;
@@ -57,26 +52,23 @@ body {
   border-radius: 6px;
 }
 
-/* ===== ABOUT LUXURY ===== */
+/* ===== ABOUT ===== */
 .about-section {
   position: relative;
   background: url("images/luxury-interior.jpg") center/cover no-repeat;
   color: #fff;
   padding: 90px 20px;
 }
-
 .about-section .overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.7);
 }
-
 .about-section .content {
   position: relative;
   max-width: 900px;
   margin: auto;
 }
-
 .highlight {
   font-weight: 700;
 }
@@ -87,15 +79,6 @@ body {
   margin: 80px auto;
   padding: 20px;
 }
-
-.license-section ul {
-  padding-left: 20px;
-}
-
-.license-section li {
-  margin-bottom: 10px;
-}
-
 .note {
   font-size: 14px;
   opacity: 0.8;
@@ -108,19 +91,16 @@ body {
   padding: 90px 20px;
   color: #fff;
 }
-
 .trust-section::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.7);
 }
-
 .trust-section h2,
 .trust-grid {
   position: relative;
 }
-
 .trust-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -129,23 +109,20 @@ body {
   margin: auto;
 }
 
-/* ===== PROPERTY GRID ===== */
+/* ===== GRID ===== */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
-
 .card {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
-
 .card-content {
   padding: 18px;
 }
-
 .price {
   font-weight: 700;
 }
@@ -165,19 +142,51 @@ body {
   list-style: none;
   padding: 0;
 }
-
 .services li {
   background: #f5f5f5;
   padding: 18px;
   border-left: 4px solid #111;
 }
 
-/* ===== STATS ===== */
-.stats {
-  background: #111;
-  color: #fff;
+/* ===== TIKTOK LUXURY ===== */
+.tiktok-luxury {
+  background: url("images/luxury-gold-bg.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+  position: relative;
+}
+.tiktok-luxury::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+}
+.tiktok-content {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
   text-align: center;
-  padding: 50px 20px;
+}
+.tiktok-content h2 {
+  color: #d4af37;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.tiktok-content p {
+  color: #eee;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.tiktok-btn {
+  background: #d4af37;
+  color: #000;
+  padding: 15px 36px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.tiktok-btn:hover {
+  background: #fff;
 }
 
 /* ===== CONTACT ===== */
@@ -186,7 +195,6 @@ body {
   padding: 40px;
   text-align: center;
 }
-
 footer {
   background: #111;
   color: #aaa;
@@ -262,8 +270,19 @@ footer {
   </ul>
 </section>
 
+<!-- TIKTOK -->
+<section class="tiktok-luxury">
+  <div class="tiktok-content">
+    <h2>Follow Steven Prime Realty on TikTok</h2>
+    <p>Luxury listings • Smart investments • Lagos real estate insights</p>
+    <a href="https://www.tiktok.com/@stevenprimerealty" target="_blank" class="tiktok-btn">
+      Follow on TikTok
+    </a>
+  </div>
+</section>
+
 <!-- CONTACT -->
-<section class="section contact">
+<section class="contact">
   <h2>Contact Us</h2>
   <p>📧 stevensprimerealty@gmail.com</p>
 </section>
